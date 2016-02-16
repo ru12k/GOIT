@@ -10,11 +10,8 @@
 var n=30;
 
 for (var i=2; i<=n; i++) {
-
-    for (var k=1; k<i; k++){
-
+    for (var k=2; k<i; k++){
         var def;
-
         if (i%k==0) {
             def=false;
             break;
@@ -23,9 +20,18 @@ for (var i=2; i<=n; i++) {
             def=true;
         }
     }
-
     if (def) {
         console.log(i);
     }
-
 }
+
+
+/*
+for (var i=2; i<=n; i++){
+    for(var k=2; k<=i; k++){
+        if (i%k == 0) break;
+    }
+    if(k==i) console.log(i);
+}
+
+*/
