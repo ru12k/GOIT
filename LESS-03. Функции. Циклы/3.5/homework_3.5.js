@@ -9,25 +9,42 @@
  */
 
 var n=8;
-var l=n*n;
+var str;
 
-var str='#';
+function getLine(n,k){
+    if (k%2==0){
+        str='#';
+        for (var i=1; i<=n; i++){
 
-for (var i=1; i<=l; i++) {
+            if (i%2==0) {
+                str=str+'#';
+            }
 
-    if ((i%2==0)&&(i%n!=0)) {
-        str=str+'#';
-    }
-
-    else {
-        str=str+' ';
-        if (i%n==0) {
-            str=str+'\n';
+            else {
+                str=str+' ';
+            }
         }
     }
+    else if (k%2!=0){
+        str=' ';
+        for (var i=1; i<=n; i++){
 
+            if (i%2!=0) {
+                str=str+'#';
+            }
+
+            else {
+                str=str+' ';
+            }
+        }
+    }
+    console.log(str);
+};
+
+for (var k=0; k<=n; k++) {
+    getLine(n,k)
 }
 
-console.log(str);
+
 
 
