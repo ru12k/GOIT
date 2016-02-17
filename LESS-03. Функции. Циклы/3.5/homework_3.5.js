@@ -7,43 +7,32 @@
  Напишите программу, создающую строку, содержащую решётку 8х8, в которой линии разделяются символами новой строки. На каждой позиции либо пробел, либо \#. В результате должна получиться шахматная доска.
 
  */
-
 var n=8;
-var str;
+function getLine(n) {
+    var str='#';
+    for (var i=1; i<n; i++) {
 
-function getLine(n,k){
-    if (k%2==0){
-        str='#';
-        for (var i=1; i<=n; i++){
-
-            if (i%2==0) {
-                str=str+'#';
-            }
-
-            else {
-                str=str+' ';
-            }
+        if (i%2==0) {
+            str+='#';
+        }
+        else {
+            str+=' ';
         }
     }
-    else if (k%2!=0){
-        str=' ';
-        for (var i=1; i<=n; i++){
-
-            if (i%2!=0) {
-                str=str+'#';
-            }
-
-            else {
-                str=str+' ';
-            }
-        }
-    }
-    console.log(str);
-};
-
-for (var k=0; k<=n; k++) {
-    getLine(n,k)
+    return str;
 }
+
+for (var k=1; k<n; k++) {
+    if (k%2==0) {
+        console.log(getLine(n));
+    }
+    else {
+        console.log(' '+ getLine(n));
+    }
+}
+
+
+
 
 
 
