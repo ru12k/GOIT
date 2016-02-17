@@ -15,14 +15,15 @@ var str='#';
 
 for (var i=1; i<=l; i++) {
 
-    if (i%2==0) {
+    if ((i%2==0)&&(i%n!=0)) {
         str=str+'#';
     }
-    else if (i%l==0) {
-        str=str+'\n';
-    }
+
     else {
         str=str+' ';
+        if (i%n==0) {
+            str=str+'\n';
+        }
     }
 
 }
