@@ -8,22 +8,25 @@
 
  */
 
-var n=3;
+var n=8;
+var l=n*n;
 
-for (var i=1; i<=n; i++) {
-    var cell1='#';
-    var cell2=' ';
-    var line;
-    if (i%2==0) {line=cell1+cell2;}
-    else {line=cell2+cell1;}
-    console.log(getLine());
-}
+var str='#';
 
-function getLine(){
-    for (var k=1; k<=n; k++) {
-        line += line;
+for (var i=1; i<=l; i++) {
+
+    if (i%2==0) {
+        str=str+'#';
     }
-    return line;
+    else if (i%l==0) {
+        str=str+'\n';
+    }
+    else {
+        str=str+' ';
+    }
+
 }
+
+console.log(str);
 
 

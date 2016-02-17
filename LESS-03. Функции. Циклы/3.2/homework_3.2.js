@@ -26,7 +26,6 @@ for (var i=2; i<=n; i++) {
 }
 
 
-/*
 for (var i=2; i<=n; i++){
     for(var k=2; k<=i; k++){
         if (i%k == 0) break;
@@ -34,4 +33,4 @@ for (var i=2; i<=n; i++){
     if(k==i) console.log(i);
 }
 
-*/
+
