@@ -15,6 +15,7 @@ function pow(x,n) {
     }
     return x * pow(x, n-1);
 }
-
 console.log(pow(3,2));
+
+
 
