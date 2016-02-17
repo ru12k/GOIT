@@ -16,4 +16,4 @@ function getFib(n) {
     return getFib(n-1) + getFib(n-2);
 }
 
-console.log(getFib(40));
+console.log(getFib(7));
