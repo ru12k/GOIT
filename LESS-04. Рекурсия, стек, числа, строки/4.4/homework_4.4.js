@@ -3,5 +3,7 @@
  *
  *
  Задание 4
+ Codewars
+ http://www.codewars.com/kata/a-function-within-a-function
 
  */
