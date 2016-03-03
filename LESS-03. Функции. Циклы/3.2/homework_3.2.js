@@ -8,7 +8,7 @@
  P.S. Код также должен легко модифицироваться для любых других интервалов.
  */
 var n=30;
-
+/*
 for (var i=2; i<=n; i++) {
     for (var k=2; k<i; k++){
         var def;
@@ -24,9 +24,9 @@ for (var i=2; i<=n; i++) {
         console.log(i);
     }
 }
+*/
 
-
-for (var i=2; i<=n; i++){
+for (var i=1; i<=n; i++){
     for(var k=2; k<=i; k++){
         if (i%k == 0) break;
     }
